@@ -13,7 +13,7 @@
 
     <script type="text/javascript" src="js/paper-full.js"></script>
     <script type="text/paperscript" canvas="myCanvas">
-    
+
     var animate = [];
     var flag = 0
     function circle(e) {
@@ -29,11 +29,9 @@
 
     function dots(e) {
         var count = 10
-        var dotsArray = [];
         for (var i = 0; i < count; i++) {
             var point = new Point(view.size.width * 0.75, view.size.height * 0.75);
             var center = point * Point.random();
-            dotsArray.push(center);
             var path = new Path.Circle({
                 center: center,
                 radius: 30,
